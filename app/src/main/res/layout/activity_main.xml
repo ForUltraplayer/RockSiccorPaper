@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/hand_animation_view"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/animation" />
+
+        <!-- 패배, 승리, 무승부 메시지가 표시될 위치에 TextView 추가 -->
+        <TextView
+            android:id="@+id/result_textview"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/set_hand_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rock"
+            android:visibility="invisible"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageButton
+            android:id="@+id/scissors_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:backgroundTint="#FFEB3B"
+            android:onClick="btn_click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/scissors"
+            android:tag="1" />
+
+        <ImageButton
+            android:id="@+id/rock_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:backgroundTint="#FFEB3B"
+            android:onClick="btn_click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rock"
+            android:tag="2" />
+
+        <ImageButton
+            android:id="@+id/paper_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:backgroundTint="#FFEB3B"
+            android:onClick="btn_click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/paper"
+            android:tag="3" />
+
+        <ImageButton
+            android:id="@+id/replay_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:backgroundTint="#FFEB3B"
+            android:onClick="btn_click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/replay" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/end_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00AFFF"
+            android:text="게임종료하기"
+            android:textSize="21dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

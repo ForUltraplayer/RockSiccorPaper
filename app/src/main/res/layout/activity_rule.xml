@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".rule">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:background="#8DDC33"
+        android:gravity="center"
+        android:text="2명이상의 인원이 동시에 '가위, 바위, 보'를 말하며 동시에 각자 특정한 모양의 손을 내밀어 상성 관계에 따라 승부를 결정짓는 게임이다.\n"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:backgroundTint="#00AFFF"
+        android:gravity="center"
+        android:text="메인화면으로"
+        android:textSize="30dp" />
+
+</LinearLayout>
